@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Honey 💖</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            transform: scale(1);
+        }
+
+        .video-bg {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .message {
+            color: #fff;
+            font-size: clamp(18px, 4vw, 32px);
+            max-width: 800px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,.8);
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <!-- AUDIO -->
+    <audio id="miAudio" autoplay loop hidden>
+      <source src="love_you _ike_a_love_song.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- VIDEO -->
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="tulipanes_blancos.mp4" type="video/mp4">
+    </video>
+
+    <!-- TEXTO -->
+    <div class="overlay">
+        <div class="message">
+            VES HONEY, YA PASAMOS LOS 3 MESES  
+            Y DECÍAS QUE NO DURARÍAMOS MÁS DE UN MES JAJAJ 💖  
+            <br><br>
+            SABES QUE TE APRECIO Y ERES UNA GRAN PERSONA  
+            CON MUCHO CARIÑO  
+            <br><br>
+            <strong>JUAN</strong><br><br>
+            04/11/2025
+        </div>
+    </div>
+
+</body>
+</html>
